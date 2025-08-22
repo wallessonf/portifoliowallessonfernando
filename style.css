@@ -5,21 +5,29 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #6366f1;
-  --secondary-color: #8b5cf6;
-  --accent-color: #06b6d4;
-  --dark-bg: #0f172a;
-  --card-bg: #1e293b;
-  --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --gradient: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-}
 
+:root {
+
+  --primary-color: #00ff88;
+
+  --secondary-color: #00d4ff;
+
+  --accent-color: #ff00ff;
+
+  --dark-bg: #0a0a0a;
+
+  --card-bg: #1a1a2e;
+
+  --text-primary: #ffffff;
+
+  --text-secondary: #a0a0a0;
+
+  --gradient: linear-gradient(135deg, #00ff88, #00d4ff);
+
+  --botao-projeto: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+}
+                
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--dark-bg);
@@ -131,6 +139,7 @@ body {
   color: var(--text-secondary);
   animation: fadeInUp 1s ease 0.4s both;
 }
+
 
 .botao-cta {
   display: inline-block;
@@ -326,7 +335,7 @@ body {
 }
 
 .botao-projeto {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: var(--botao-projeto);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
